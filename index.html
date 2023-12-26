@@ -4,12 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../Proyecto2/css/style.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
       <img class="logo"
-        src="../Proyecto2/img/Captura_de_pantalla_2023-12-08_235653-transformed.png"
+        src="img/Captura_de_pantalla_2023-12-08_235653-transformed.png"
         alt=""
       />
       
@@ -132,30 +134,30 @@
                 </div>
             </li>
             <li class="list-i botonAzul">
-                <div class="list-b " >
+                <div class="list-b" data-bs-toggle="modal" data-bs-target="#loginModal">
                     <a href="#" class="nav-link">Login</a>
-                    
-                
-            </div>
-        </li>
+                </div>
+            </li>
            
         </ul>
              </nav>
         
            </header>
 
+           
+
 
            <section class="section1">
 
             
 
-            <img src="../Proyecto2/img/88d5c2c3f8f228a046109bf65db24893-transformed.jpeg" alt="">
+            <img src="img/88d5c2c3f8f228a046109bf65db24893-transformed.jpeg" alt="">
             <div class="texto"><h1>Especialistas de corazón</h1>
             <form action="#" method="get" class="search-form">
                 <label for="search"></label>
                 <div class="buscador">
                 <input type="text" id="search" name="search" placeholder="buscar especialidad,servicio, profesional">
-                <img id="lupa" src="../Proyecto2/img/search.svg" alt=""></div>
+                <img id="lupa" src="img/search.svg" alt=""></div>
             </form>
 
             
@@ -166,6 +168,56 @@
 
 
            </section>
+           <div class="linea-horizontal"></div>
+
+
+
+           <section class="carrusel-med">
+            <div class="container">
+            <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Diagnýstico_cardýaco__o_que_ý_e_como_fazer_a_distýncia-transformed.jpeg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Pacientes</h2>
+                      <a href=""><h5>Informacion para pacientes</h5></a>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/download_image_1703618372022.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Profesionales</h2>
+                     <a href=""><h5>Informacion para profesionales</h5></a> 
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/download_image_1703618017139.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2>Historias de nuestros pacientes</h2>
+                      <a href=""><h5>Explora sus testiomonios</h5></a>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
+          </div> 
+        </section>
+
+
+        <div class="linea-horizontal"></div>
 
 
 
@@ -176,6 +228,54 @@
 
 
 
-    <script src="../Proyecto2/script.js"></script>
+
+
+
+
+           <footer class="containerr">
+            <div class="row">
+              <div class="col-md-4">
+                <img src="img/download_image_1703617937393.png" alt="" />
+              </div>
+              <div class="col-md-4" id="iconoss">
+                <h5><a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></h5>
+                <h5><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></h5>
+                <h5><a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></h5>
+                <h5><a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></h5>
+
+              </div> 
+              <div class="col-md-4">
+                <h4>Suscribite al newsletter</h4>
+                <label for="profesional">Soy profesional
+                    <input class="newss" type="radio" id="profesional" name="tipoUsuario">
+                </label>
+                <label for="paciente">Soy paciente
+                    <input class="newss" type="radio" id="paciente" name="tipoUsuario">
+                </label>
+                <input type="email" placeholder="Email address" />
+                <button type="button"><i class="fa-solid fa-arrow-right"></i></button>
+              </div>
+            </div>
+          </footer>
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script
+    src="https://kit.fontawesome.com/159fbb4174.js"
+    crossorigin="anonymous"
+  ></script>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+  crossorigin="anonymous"
+></script>
   </body>
 </html>

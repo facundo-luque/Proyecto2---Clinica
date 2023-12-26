@@ -65,7 +65,7 @@ header {
 .nav-link{
     color: rgb(18, 18, 92);
     display: block;
-    padding: 12px 0;
+    padding: 10px 0;
     text-decoration: none;
    
 }
@@ -77,7 +77,7 @@ header {
     width: 80%;
     list-style: none;
     margin-top: auto;
-    border-left: 2px solid rgba(6, 39, 104, 0.615);
+    border-left: 2px solid rgba(6, 39, 104, 0.234);
     transition: height .4s;
     height: 0px;
     overflow: hidden;
@@ -90,8 +90,7 @@ header {
     border: 2px solid red;
     color: white;
     background-color: red;
-    padding: 15px;
-    margin: 2px ;
+    padding-left: 18px;
     width: 190px;
     height: 48px;
 }
@@ -108,8 +107,7 @@ header {
     border: 2px solid rgb(6, 6, 86);
     color: white;
     background-color:rgb(6, 6, 86);
-    padding: 15px 25px 15px 39px;
-    margin: 2px ;
+    padding-left: 38px;
     width: 170px;
     height: 48px;
 }
@@ -189,4 +187,44 @@ button {
     color: rgb(7, 9, 100);
     font-size: 20px;
     background-color: #ffffff44;
+}
+.linea-horizontal {
+    width: auto; 
+    height: 2px; 
+    background-color: rgb(13, 20, 62); 
+    margin: 20px 75px;
+}
+.container {
+    max-width: 90%; 
+    margin: 0 auto; 
+}
+
+.carousel-inner img {
+    height: 650px;
+    
+    object-fit: cover; 
+}
+footer img {
+    width: 150px;
+    height: 130px;
+}
+.newss {
+    width: 36px;
+    height: 15px;
+}
+
+#iconoss{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    
+}
+#iconoss h5 a {
+    margin: 10px;
+    color: rgb(12, 12, 89);
+}
+
+.containerr {
+    max-width: 94%; 
+    margin: 0 auto; /* Centra el contenedor */ 
 }
