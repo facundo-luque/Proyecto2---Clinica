@@ -143,8 +143,68 @@
              </nav>
         
            </header>
-
-           
+           <div class="modal" id="loginModal" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Seleccione tu tipo de usuario</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container">
+                            <h2 class="text-center mb-4">Clínica Médica</h2>
+                          
+                            <div class="btn-container">
+                              <button class="btn btn-primary" onclick="mostrarFormulario('medico')">SOY PROFESIONAL</button>
+                              <button class="btn btn-primary" onclick="mostrarFormulario('paciente')">SOY PACIENTE</button>
+                            </div>
+                          
+                            <!-- Formulario de inicio de sesión para médicos -->
+                            <div class="form-container" id="medicoForm" style="display: none;">
+                              <h4 class="mb-3">Iniciar sesión como Profesional</h4>
+                              <form onsubmit="return autenticarUsuario('medico')">
+                                <div class="form-group">
+                                  <label for="medicoUsuario">Usuario:</label>
+                                  <input type="text" class="form-control" id="medicoUsuario" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="medicoContrasena">Contraseña:</label>
+                                  <input type="password" class="form-control" id="medicoContrasena" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                              </form>
+                            </div>
+                          
+                            <!-- Formulario de inicio de sesión para pacientes -->
+                            <div class="form-container" id="pacienteForm" style="display: none;">
+                              <h4 class="mb-3">Iniciar sesión como Paciente</h4>
+                              <form onsubmit="return autenticarUsuario('paciente')">
+                                <div class="form-group">
+                                  <label for="pacienteUsuario">Usuario:</label>
+                                  <input type="text" class="form-control" id="pacienteUsuario" required>
+                                </div>
+                                <div class="form-group">
+                                  <label for="pacienteContrasena">Contraseña:</label>
+                                  <input type="password" class="form-control" id="pacienteContrasena" required>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Iniciar sesión</button>
+                              </form>
+                            </div>
+                          
+                            <div id="mensajeError" class="text-danger mt-3"></div>
+                          </div>
+                        
+                        
+                    </div>
+                    <div class="modal-footer">
+                        <p>¿No tienes cuenta? <a href="#">Regístrate</a></p>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
 
 
            <section class="section1">
@@ -268,6 +328,7 @@
 
 
     <script src="script.js"></script>
+    <script src="app.js"></script>
     <script
     src="https://kit.fontawesome.com/159fbb4174.js"
     crossorigin="anonymous"
