@@ -1,0 +1,24 @@
+footer img {
+    width: 150px;
+    height: 100px;
+}
+.newss {
+    width: 36px;
+    height: 15px;
+}
+
+#iconoss{
+    display: flex;
+    flex-direction: row;
+    padding-top: 20px;
+    
+}
+#iconoss h5 a {
+    margin: 10px;
+    color: rgb(12, 12, 89);
+}
+
+.containerr {
+    max-width: 94%; 
+    margin: 0 auto; /* Centra el contenedor */ 
+}
