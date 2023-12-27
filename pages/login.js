@@ -20,7 +20,7 @@ function autenticarUsuario(tipoUsuario) {
 
   // Simulación de autenticación
   if (usuario === 'medico' && contrasena === 'contrasena' && tipoUsuario === 'medico') {
-    window.location.href = 'dashboard_medico.html'; // Redirigir al html del médico
+    window.location.href = '../pages/TurnosMedicos.html'; // Redirigir al html del médico
     return false; // Evitar que el formulario se envíe
   } else if (usuario === 'paciente' && contrasena === 'contrasena' && tipoUsuario === 'paciente') {
     window.location.href = 'dashboard_paciente.html'; // Redirigir al html del paciente

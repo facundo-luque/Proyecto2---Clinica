@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/TurnosMedicos.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <a href="../index.html"> <img
+         class="logo"
+         src="../img/Captura_de_pantalla_2023-12-08_235653-transformed.png"
+         alt="se rompio"
+       /> 
+     </a> 
+    
+         <nav class="nav">
+           <ul class="list">
+             <li class="list-i list-i-click">
+               <div class="list-b list-click">
+                 <a href="#" class="nav-link">Pacientes</a>
+                 <img src="../img/arrow.svg" class="list-arrow" alt="" />
+               </div>
+    
+               <ul class="list-show">
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Coberturas</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins"
+                     >Consultorio virtual</a
+                   >
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Servicios medicos</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Asistencia</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Testimonios</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins"
+                     >Pacientes internacionales</a
+                   >
+                 </li>
+               </ul>
+             </li>
+    
+             <li class="list-i list-i-click">
+               <div class="list-b list-click">
+                 <a href="#" class="nav-link">Profesionales</a>
+                 <img src="../img/arrow.svg" class="list-arrow" alt="img rota" />
+               </div>
+    
+               <ul class="list-show">
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Docencia</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Investigación</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins"
+                     >Derivar un paciente</a
+                   >
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Presente su caso</a>
+                 </li>
+               </ul>
+             </li>
+             <li class="list-i list-i-click">
+               <div class="list-b list-click">
+                 <a href="#" class="nav-link">Más info</a>
+                 <img src="../img/arrow.svg" class="list-arrow" alt="" />
+               </div>
+    
+               <ul class="list-show">
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Institucional</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Sedes</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Contacto</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins"
+                     >Politicas de calidad</a
+                   >
+                 </li>
+    
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins"
+                     >Programas por enfermedad</a
+                   >
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins">Clinicas</a>
+                 </li>
+                 <li class="list-ins">
+                   <a href="#" class="nav-link nav-link-ins"
+                     >Experiencia del paciente</a
+                   >
+                 </li>
+               </ul>
+             </li>
+    
+             <li class="list-i" id="botonRojo">
+               <div class="list-b">
+                 <a href="#" class="nav-link">Guardia 24hs</a>
+               </div>
+             </li>
+             <li class="list-i botonAzul">
+               <div class="list-b">
+                 <a href="../pages/TurnosPacientes.html" class="nav-link">Turnos</a>
+               </div>
+             </li>
+             <li class="list-i botonAzul">
+               <div
+                 class="list-b"
+                 data-bs-toggle="modal"
+                 data-bs-target="#loginModal"
+               >
+                 <a href="#" class="nav-link">Login</a>
+               </div>
+             </li>
+           </ul>
+         </nav>
+       </header>
+
+    <div class="table-container">
+        <table class="table" id="MainTable">
+            <thead>
+
+               
+                    <tr   class="table table-primary" >
+                        
+                        <th scope="col" class="col-2" >Paciente</th>
+                        <th scope="col" class="col-2">Consulta</th>
+                        <th scope="col" class="col-2">Fecha</th>
+                        <th scope="col" class="col-2">Hora</th>
+                        <th scope="col" class="invisible" >invisible</th>
+                    </tr>
+                
+                
+    
+            </thead>
+          
+            <tbody id="tbody">
+    
+            </tbody>
+        </table>
+
+        <div class="mensaje">
+            
+        </div>
+    </div>
+
+
+    <footer class="containerr">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="../img/download_image_1703617937393.png" alt="" />
+          </div>
+          <div class="col-md-4" id="iconoss">
+            <h5><a href="#" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></h5>
+            <h5><a href="#" target="_blank"><i class="fab fa-twitter fa-2x"></i></a></h5>
+            <h5><a href="#" target="_blank"><i class="fab fa-instagram fa-2x"></i></a></h5>
+            <h5><a href="#" target="_blank"><i class="fab fa-youtube fa-2x"></i></a></h5>
+  
+          </div> 
+          <div class="col-md-4">
+            <h4>Suscribite al newsletter</h4>
+            <label for="profesional">Soy profesional
+                <input class="newss" type="radio" id="profesional" name="tipoUsuario">
+            </label>
+            <label for="paciente">Soy paciente
+                <input class="newss" type="radio" id="paciente" name="tipoUsuario">
+            </label>
+            <input type="email" placeholder="Email address" />
+            <button type="button"><i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </footer>
+
+
+    <script src="../pages/TurnosMedicos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
