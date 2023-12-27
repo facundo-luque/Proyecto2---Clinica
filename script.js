@@ -1,4 +1,4 @@
-// Reemplaza el código JavaScript existente con el siguiente:
+
 
 document.addEventListener('DOMContentLoaded', function() {
     let listElements = document.querySelectorAll('.list-click');

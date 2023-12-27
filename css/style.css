@@ -154,7 +154,7 @@ label {
 }
 
 input {
-    width: 360px;
+    width: 470px;
     height: 50px;
     margin-bottom: 10px;
     border-radius: 30px ;
@@ -244,3 +244,22 @@ footer img {
 #error3 {
     padding-top: 50px;
 }
+
+#suggestions {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    color: black;
+  }
+  
+  #suggestions li {
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #suggestions li:hover {
+    background-color: #e0e0e0;
+  }
+  

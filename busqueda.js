@@ -1,5 +1,5 @@
 
-const options = ['Especialidad Cardiología', 'Especialidad Pediatría', 'Especialidad Traumatología', 'Otra Especialidad'];
+const options = ['Especialidad Cardiología', 'Especialidad Pediatría', 'Especialidad Traumatología', 'Otra Especialidad', 'Tratamientos', 'Recetas'];
 
 
 const searchInput = document.getElementById('search');
@@ -26,7 +26,7 @@ function displaySuggestions(suggestions) {
   
   suggestionsList.innerHTML = '';
 
-  
+ 
   suggestions.forEach(suggestion => {
     const li = document.createElement('li');
     li.textContent = suggestion;
@@ -34,7 +34,7 @@ function displaySuggestions(suggestions) {
     
     li.addEventListener('click', () => {
       searchInput.value = suggestion;
-      suggestionsList.innerHTML = ''; 
+      suggestionsList.innerHTML = '';
     });
 
     suggestionsList.appendChild(li);
