@@ -22,3 +22,12 @@ document.addEventListener('DOMContentLoaded', function() {
         document.getElementById('search').select();
     });
 });
+function fakeSubscribe() {
+    var fakeEmail = document.getElementById("fakeEmail").value;
+
+    if (fakeEmail !== "") {
+        alert("¡Gracias por suscribirte! Te enviaremos información exclusiva a: " + fakeEmail);
+    } else {
+        alert("Por favor, ingresa tu correo electrónico.");
+    }
+}
