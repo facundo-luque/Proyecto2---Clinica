@@ -192,7 +192,7 @@ button {
     width: auto; 
     height: 2px; 
     background-color: rgb(13, 20, 62); 
-    margin: 20px 75px;
+    margin: 10px 75px;
 }
 .container {
     max-width: 90%; 
@@ -227,4 +227,20 @@ footer img {
 .containerr {
     max-width: 94%; 
     margin: 0 auto; /* Centra el contenedor */ 
+}
+
+#error2 img {
+    width: 90%;
+    
+    
+
+}
+
+#error1 {
+    display: flex;
+    flex-direction: row;
+    
+}
+#error3 {
+    padding-top: 50px;
 }
